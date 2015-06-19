@@ -1,0 +1,18 @@
+Source: dare2tech-makemicro32
+Section: boards
+Priority: extra
+XBSC-Group: Dare2Tech
+XBSC-Family: pic32
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: dare2tech-makemicro32
+Section: boards
+XBSC-Group: Dare2Tech
+Homepage: http://www.dare2tech.com
+Architecture: all
+Depends: chipkit
+Description: MAKEmicro32
+ A great, small, breadboard compatible PIC32MX250F128B breakout board.
+
