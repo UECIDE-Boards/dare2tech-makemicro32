@@ -1,0 +1,29 @@
+name=dare2tech-makemicro32
+description=MAKEmicro32
+group=Dare2Tech
+
+board=_BOARD_MAKEmicro32_
+board.define=-D_USE_USB_FOR_SERIAL_
+ldscript=chipKIT-application-32MX250F128${upload.${prefs:board.${prefs:board}.programmer}.ldsuffix}.ld
+
+upload.protocol=stk500v2
+
+upload.maximum_size=122880
+upload.speed=115200
+
+build.mcu=32MX250F128B
+build.f_cpu=40000000L
+build.core=pic32
+build.variant=MAKEmicro32
+
+family=pic32
+core=chipkit
+
+options.usb.name=USB Settings
+options.usb.default=withSerial
+options.usb.purge=true
+options.usb.withoutSerial.name=Disable USB Serial
+options.usb.withoutSerial.flags=
+options.usb.withSerial.name=Enable USB Serial
+options.usb.withSerial.flags=-D_USE_USB_FOR_SERIAL_
+
